@@ -1,1 +1,258 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <style>
+        body {
+          background-color: black;
+            color: black;
+            overflow-y: scroll;
+            margin: 0;
+            font-family: Arial Black;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+            font-family: "Exo Bold", Arial-Black; 
+            font-size: 30px;
+        }
+      }
+ 
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #c20000;
+  background: #ffffff;
+  display: block;
+  float: left; /* This should be changed */
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #c20000;
+}
+
+li:hover {
+  background: white;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0;
+  left: 0;
+  display: none;
+  z-index: 20;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+        nav ul {
+    width: 100%; /* Ensures the menu takes the full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distributes items evenly */
+     border-bottom: 4px solid #c20000; /* Adjust thickness and color as needed */
+}
+
+@font-face {
+  font-family: "Exo Bold";
+  src: url('/exo/Exo-Bold.otf');
+  src: url('/exo/Exo-Bold.otf') format('otf');
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.outlined-text {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #c20000;
+  text-stroke-width: 2px; 
+  text-stroke-color: #c20000;
+}
+
+         .hover-text {
+        position: absolute;
+        color: white;
+        font-family: monospace;
+        font-size: 15;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    a:hover .hover-text {
+        opacity: 1;
+    }
+
+        
+        body {
+            display: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+       .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 50px;
+        border: 6px solid white;
+        border-radius: 75px;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 12px; /* Center the containers */
+        padding: 6px;
+    }
+
+
+        .container img {
+            width: 40px;
+            height: 40px;
+            margin-left: 9px;
+        }
+
+
+        .container p {
+            color: #83d2f8;
+            font-size: 22px;
+            font-family: Arial-Black;
+            text-decoration: shine;
+        }
+.container g {
+            color: #83d2f8;
+            font-size: 26px;
+            font-family: Arial-Black;
+            text-decoration: shine;
+        }
+.container f {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 26px;
+            font-family: Arial-Black;
+            text-decoration: shine;
+        }
+
+.test1 {
+        display: flex; /* Changed to flex for alignment */
+        justify-content: center; /* Center the containers */
+        align-items: center;
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
+          .oval-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       text-align: center;
+        width: 620px;
+        height: 40px;
+        border: 8px solid #ffffff;
+        border-radius: 75px;
+        background-color: #ffffff80;
+        padding: 18px;
+       margin: auto;
+        }
+
+
+
+ .pulse {
+  animation: glow-pulse 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow-pulse {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff4da6;
+  }
+}
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+img {
+    max-width: 100%;
+    height: auto;
+}
+   
+    </style>
+</head>
+
+<body>
+<nav>
+  <ul>
+      <li><a href="index.html"><span style="color: #c20000; font-size: 25px; font-family: Arial-Black;">Home</span></a></li>   
+
+      <li><a href="Members.html"><span style="color: #c20000; font-size: 25px; font-family: Arial-Black;">Members</span></a></li>
+
+      <li><a href="Events.html"><span style="color: #c20000; font-size: 25px; font-family: Arial-Black;">Events</span></a></li>
+
+      <li><a href="Join.html"><span style="color: #c20000; font-size: 25px; font-family: Arial-Black;">Join Us</span></a></li>
+    
+      <li><a href="Socials.html"><span style="color: #c20000; font-size: 25px; font-family: Arial-Black;">Socials</span></a></li>
+  </ul>
+</nav>
+
+
+
+  <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/watch?v=zy6ZN1qM3sY" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+     
+     
+    
+    <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+    
+    
+</html>
